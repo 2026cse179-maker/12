@@ -1,0 +1,109 @@
+<DOCTYPE html>
+  <html>
+    <head>
+      <title>My portfolio</title>
+<link rel="stylisheet" href="Style.css'>
+ </head>
+  <body>
+
+  <header>
+  <h1>My portfolio </h1>
+  <p>Web Developer|Programmer|Learner</p>
+  </header>
+  
+  <nav>
+  <a href="#"about>About Me </a>
+      <a href="#"skills>Skills</a>
+       <a href="#"project>projects</a>
+      <a href="#"contact>contact</a>
+    </nav>
+      <section id ="about>
+        <h2>About Me</h2>
+        <p>
+        I am interested in programming ,web development and emerging technologies.
+        </p>
+        </section>
+
+        <section id="skills">
+        <h2>skills</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Python</li>
+          
+        </ul>
+      </section>
+
+      <section id="Projects">
+        <h2>Projects</h2>
+        <ol>
+          <li>Student Management System </li>
+          <li>Personal Portfolin</li>
+          <li>online registration system </li>
+          </ol>
+      </section>
+
+       <section id="contact">
+        <h2>Contact Me </h2>
+         <form onsubmit="return validateForm()">
+           <input type="text"id="name"placeholder="enter your name">
+           <br><br>
+            <input type="email"id="email"placeholder="enter your email">
+           <br><br>
+           <textarea id="message"placeholder="Enter your message"></textarea>
+           <br><br>
+           <button type="submit>send message </button>
+             </form>
+             </section>
+             <footer>
+             <p>@2026My portfolin</p>
+             </footer>
+             <script src="script.js"></script>
+           </body>
+           </html>
+
+
+
+
+             body{
+             font-family;arial,sans-serif;
+             margin:0;
+             }
+             header{
+             background-color:#222;
+             color:white;
+             text-align:center;
+             padding:40px;
+             }
+             nav {
+             text-align:center;
+             padding:20px;
+             }
+             nav a{
+             margin:15px;
+             text-decoration:none;
+             }
+             section{
+             padding:30px;
+             }
+             footer{
+             text-align;center;
+             padding:20px;
+             background-color:#222;
+             color:white;
+             }
+             function validate form(){
+             let name=document.getElementById("name").value;
+             let email=document.getElementById("email").value;
+             let message=document.getElementById("message").value;
+
+             if(name==" "||email==" "||message==" "){
+             alert("Please fill in all fields"):
+             return false;
+             }
+             alert("Message submitted successfully!");
+             return false;
+             }
+             
+    
